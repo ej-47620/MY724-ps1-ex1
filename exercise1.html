@@ -628,9 +628,9 @@ Remove_NA_values(airquality)</code></pre>
 ## 152    18     131  8.0   76     9  29
 ## 153    20     223 11.5   68     9  30</code></pre>
 <pre class="r"><code>#code to define a second function to transform a data set 
-Remove_July_values &lt;-function(x){
-  filtered_x &lt;- x[x$Month !=7, ]
-  return(filtered_x)
+Remove_July_values &lt;-function(data_new){
+  filtered_data_new &lt;- data_new[data_new$Month !=7, ]
+  return(filtered_data_new)
 }
 
 Remove_July_values(airquality)</code></pre>
