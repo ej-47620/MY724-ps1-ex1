@@ -14,9 +14,9 @@ Remove_NA_values(airquality)
 
 ```{r}
 #code to define a second function to transform a data set 
-Remove_July_values <-function(x){
-  filtered_x <- x[x$Month !=7, ]
-  return(filtered_x)
+Remove_July_values <-function(data_new){
+  filtered_data_new <- data_new[data_new$Month !=7, ]
+  return(filtered_data_new)
 }
 
 Remove_July_values(airquality)
