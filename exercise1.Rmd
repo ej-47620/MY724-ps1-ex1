@@ -2,12 +2,23 @@
 data("airquality")
 print(airquality)
 
-# code to define a function to transform a dataset 
-Remove_NA_values <- function(x) {
-  clean_x <- na.omit(x)
-  return(clean_x)
+# code to define a function to transform a data set 
+Remove_NA_values <- function(data) {
+  clean_data <- na.omit(data)
+  return(clean_data)
 }
 
 Remove_NA_values(airquality)
+```
+
+
+```{r}
+#code to define a second function to transform a data set 
+Remove_July_values <-function(x){
+  filtered_x <- x[x$Month !=7, ]
+  return(filtered_x)
+}
+
+Remove_July_values(airquality)
 ```
 
