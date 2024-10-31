@@ -1,1 +1,13 @@
+```{r}
+data("airquality")
+print(airquality)
+
+# code to define a function to transform a dataset 
+Remove_NA_values <- function(x) {
+  clean_x <- na.omit(x)
+  return(clean_x)
+}
+
+Remove_NA_values(airquality)
+```
 
